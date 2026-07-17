@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Study Planner</h1>
+
+        <section class="stats">
+            <div class="card">
+                <h3>Total Tasks</h3>
+                <p id="totalTasks">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Completed</h3>
+                <p id="completedTasks">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending</h3>
+                <p id="pendingTasks">0</p>
+            </div>
+        </section>
+
+        <section class="task-form">
+            <input type="text" id="taskInput" placeholder="Enter study topic">
+
+            <select id="subject">
+                <option value="">Select Subject</option>
+                <option>JavaScript</option>
+                <option>Python</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>React</option>
+                <option>SQL</option>
+                <option>DSA</option>
+                <option>TypeScript</option>
+                <option>Django</option>
+            </select>
+
+            <input type="date" id="taskDate">
+
+            <select id="priority">
+                <option value="">Priority</option>
+                <option>High</option>
+                <option>Medium</option>
+                <option>Low</option>
+            </select>
+
+            <button id="addTaskBtn">Add Task</button>
+        </section>
+
+        <section class="search">
+            <input type="text" id="searchTask" placeholder="Search tasks..">
+        </section>
+
+        <section class="filters">
+            <button id="allBtn">All</button>
+            <button id="pendingBtn">Pending</button>
+            <button id="completedBtn">Completed</button>
+            <button id="highBtn">High</button>
+            <button id="mediumBtn">Medium</button>
+            <button id="lowBtn">Low</button>
+        </section>
+
+        <section class="progress">
+            <h3>Progress</h3>
+
+            <progress id="progressBar" value="0" max="100"></progress>
+
+            <p id="progressText">0%</p>
+        </section>
+
+        <section class="task-section">
+            <h2>Your Tasks</h2>
+            <ul id="taskList">
+
+            </ul>
+        </section>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
